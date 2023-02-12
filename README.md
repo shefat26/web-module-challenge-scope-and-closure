@@ -65,10 +65,17 @@ Edit the `ReadMe` file with your answers to the questions below.
 
 ```js
 function personalDice(name){
+
+  count = 0
   return function(){
+
       // generate random number between 1 and 6
+
     const newRoll = Math.floor(Math.random() * 6);
+
     console.log(`${name} rolled a ${newRoll}`)
+
+    count+= 1;
   }
 }
 
